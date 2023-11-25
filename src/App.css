@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+button{
+  background: #ff52d4;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  font-weight: bold;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+.card {
+  width: 15%;
+  padding: 2em;
+  margin: 1em 0.5em;
+  background: rgba(72, 61, 139, 0.45);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(72, 61, 139, 1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 22px #00ff00cc;
+  position: relative;
+}
+.character-name{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 20px #00ff00;
+  border-bottom: 1px dashed white;
+}
+.character-img {
+  width: 80%;
+  clip-path: polygon(95% 53%, 99% 34%, 86% 12%, 59% 10%, 44% 1%, 35% 16%, 13% 4%, 3% 30%, 7% 46%, 0% 80%, 18% 98%, 41% 98%, 57% 87%, 77% 99%, 97% 75%);
+}
+
+.wrap-img{
+  filter: drop-shadow(0px 0px 20px rgba(0, 255, 0, 0.5));
+}
+
+.card:hover, .card:focus{
+  box-shadow: 0px 0px 22px rgba(255, 82, 212, 0.5);
+}
+
+.card:hover .character-img, .card:focus .character-img{
+  transform: scale(1.1);
+}
+
+.card:hover .wrap-img, .card:focus .wrap-img{
+  filter: drop-shadow(0px 0px 20px rgba(255, 82, 212, 0.5));
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+.fav-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+}
+
+
